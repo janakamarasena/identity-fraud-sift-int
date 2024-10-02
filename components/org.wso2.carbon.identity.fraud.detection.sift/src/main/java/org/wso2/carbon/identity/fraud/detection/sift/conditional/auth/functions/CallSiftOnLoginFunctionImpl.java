@@ -89,7 +89,6 @@ public class CallSiftOnLoginFunctionImpl implements CallSiftOnLoginFunction {
         // httpclient call sift api
         HttpGet request = new HttpGet(Constants.SIFT_API_URL);
         request.addHeader("Content-Type", "application/json");
-        LOG.info("IAM WORKING JJJ ");
 
         try (CloseableHttpResponse response = httpClient.execute(request)) {
             // get response
